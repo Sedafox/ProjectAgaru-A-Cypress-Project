@@ -9,7 +9,7 @@ class Base {
         cy.visit('http://localhost:7080/add_remove_elements/')
     }
     visitBasicAuthTesting(){
-        cy.visit('http://localhost:7080/basic_auth')
+        cy.contains('Basic Auth').click()
     }
     visitBrokenImagesTesting(){
         cy.visit('http://localhost:7080/broken_images')

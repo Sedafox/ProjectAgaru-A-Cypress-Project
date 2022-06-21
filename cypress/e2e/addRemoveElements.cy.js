@@ -35,4 +35,4 @@ describe('Tests the Add and Remove Elements Page', () => {
         }
         //For each button, click delete button - 1
     })
-    })
+})
