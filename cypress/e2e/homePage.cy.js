@@ -1,6 +1,6 @@
-import HomePage from "../Integration/PageObject/homePage"
+import Base from "../Integration/PageObject/base";
 
-const homePage = new HomePage()
+const homePage = new Base()
 
 describe('Goes to the Home page', () => {
   beforeEach(() => {
@@ -8,11 +8,5 @@ describe('Goes to the Home page', () => {
     cy.pause()
   })
   it('Should go  to the Home page', () => {
-  })
-  it('Should visit A/B Testing', () => {
-    homePage.visitABTesting()
-  })
-  it('Should visit AddRemoveTesting', () => {
-    homePage.visitAddRemoveTesting()
   })
 })
