@@ -14,7 +14,7 @@ describe('Tests the Add and Remove Elements Page', () => {
     it('Should add a Button if I click Add Element', () => {
         cy.get('button[onclick="addElement()"]')
             .click()
-        addRemoveElementPage.numberOfExpectedDeleteButtons(1) //We are expecting 2 buttons to be on the page at this point
+        addRemoveElementPage.numberOfExpectedDeleteButtons(1) //We are expecting 1 Delete button to be on the page at this point
     })
     it('Should add an element I click each time. Random from 1-20', () => {
         let previousAmount = Cypress.$('button').length
@@ -32,8 +32,8 @@ describe('Tests the Add and Remove Elements Page', () => {
         for (let i = 0; OriginalAmount - 1 > i; i++) { //Click the Delete button however many times there are delete buttons
             cy.get('Button').contains('Delete')
                 .click()
-            addRemoveElementPage.numberOfExpectedDeleteButtons(newAmount) //We are expecting 1 less button every time we click
-            newAmount--
+            addRemoveElementPage.numberOfExpectedDeleteButtons(newAmount) 
+            newAmount-- //We are expecting 1 less Delete button every time we click
         }
         //For each button, click delete button - 1
     })
