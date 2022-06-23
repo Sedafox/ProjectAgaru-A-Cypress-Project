@@ -21,8 +21,8 @@ describe('Tests the Add and Remove Elements Page', () => {
         for (let i = 0; i < Math.random() * 20; i++) { //Click the Add Element button a random number of times
             cy.get('button').contains('Add Element')
                 .click()
-            addRemoveElementPage.numberOfExpectedDeleteButtons(previousAmount) //We expect another button to display after each click
-            previousAmount++
+            addRemoveElementPage.numberOfExpectedDeleteButtons(previousAmount)
+            previousAmount++ //We expect another button to display after each click
         }
     })
     it('Should remove a button if I click delete. Delete all buttons.', () => {
