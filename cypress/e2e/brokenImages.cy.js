@@ -12,7 +12,7 @@ describe('Tests designed to find Broken Images', () => {
                 //naturalWidth & Height are set when image loads
                 for(let i in $img) { //for every image found...
                     if(i <= $img.length) { 
-                        expect($img[i].naturalWidth).to.be.greaterThan(-1) //Expect all images to have a natural width > 0, which indicates that the image has loaded
+                        expect($img[i].naturalWidth).to.be.greaterThan(0) //Expect all images to have a natural width > 0, which indicates that the image has loaded
                     }
                 }
             })
