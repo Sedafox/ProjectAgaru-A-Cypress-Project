@@ -1,4 +1,4 @@
 class BrokenImagesPage{
-    image() { return cy.get('div > img') }
+    image(src) { return cy.get(`div > img[src="${src}"]`) }
 }
 export default BrokenImagesPage

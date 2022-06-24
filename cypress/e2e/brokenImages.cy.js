@@ -9,13 +9,8 @@ const brokenImagesPage = new BrokenImagesPage()
 describe('Tests designed to find Broken Images', () => {
     it('Webpage should load all image in div', () => {
         base.visitBrokenImagesTesting()
-        brokenImagesPage.image().should('be.visible').and(($img) => {
-            for (let i in $img) { //for every image found...
-                if (i <= $img.length) {
-                    expect($img[i].naturalWidth).to.be.greaterThan(0)
-                }
-                //The above code first checks if the image are visible, then for every image found, check the naturalWidth. If greater than 0, the image loaded successfully
-            }
+        brokenImagesPage.image('asdf.jpg').should('exist') //Broken image 1
+        brokenImagesPage.image('hjkl.jpg').should('exist') //Broken image 2
+        brokenImagesPage.image('img/avatar-blank.jpg').should('exist')
         })
     })
-})
