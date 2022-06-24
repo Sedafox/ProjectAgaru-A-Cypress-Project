@@ -20,7 +20,7 @@ describe('Testing Checkboxes', () => {
     it('Should ensure that clicking a checkbox will allow the user to uncheck it', () => {
         checkBoxesPage.checkBox().eq(0).click()
         checkBoxesPage.checkBox().eq(0).should('be.checked')
-            .click()
+        checkBoxesPage.checkBox().eq(0).click()
         checkBoxesPage.checkBox().eq(0).should('not.be.checked')
     })
 })
