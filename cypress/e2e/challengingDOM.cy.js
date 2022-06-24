@@ -21,10 +21,10 @@ describe('This page is designed to test the abilities of finding best locators.'
         challengingDOMPage.table().contains('Definiebas7')
     })
     it('Clicks the fourth edit from the top', () => {
-        //Okay, this is challenging...
+        challengingDOMPage.editButton().eq(3).click()
     })
     it('Clicks the sixth delete from the top', () => {
-        //TODO
+        challengingDOMPage.deleteButton().eq(5).click()
     })
     it('Checks for a canvas Element', () => {
         challengingDOMPage.canvas()
