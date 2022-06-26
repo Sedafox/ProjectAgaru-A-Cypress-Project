@@ -8,9 +8,7 @@ class Base {
     visitAddRemoveTesting() {
         cy.visit('http://localhost:7080/add_remove_elements/')
     }
-    visitBasicAuthTesting(){
-        return cy.contains('Basic Auth').click()
-    }
+
     visitBrokenImagesTesting(){
         cy.visit('http://localhost:7080/broken_images')
     }
@@ -24,9 +22,9 @@ class Base {
         cy.visit('http://localhost:7080/context_menu')
     }
     visitDigestAuthTesting(){
-        cy.visit('http://localhost:7080/digest_auth')
+        cy.visit('https://admin:admin@the-internet.herokuapp.com/digest_auth')
     }
-    visitDissappearingElmntsTesting(){
+    visitDisappearingElmntsTesting(){
         cy.visit('http://localhost:7080/disappearing_elements')
     }
     visitDragNDropTesting(){
