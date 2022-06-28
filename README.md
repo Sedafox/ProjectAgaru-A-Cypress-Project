@@ -1,5 +1,5 @@
 ---------------------------
-上がる (Agaru) To rise, To Improve, To Make Progress
+上がる (Agaru) To Rise, To Improve, To Make Progress
 ---------------------------
 
 Instructions on how to run project:
