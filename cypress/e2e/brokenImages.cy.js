@@ -4,8 +4,6 @@ import BrokenImagesPage from "../Integration/PageObject/brokenImagesPage";
 const base = new Base()
 const brokenImagesPage = new BrokenImagesPage()
 
-
-//This test is designed to fail. Two of the image will fail to load, thus making their natural width less than 1. A website owner may want to know when their image don't load
 describe('Tests designed to find Broken Images', () => {
     it('Webpage should load all image in div', () => {
         base.visitBrokenImagesTesting()
