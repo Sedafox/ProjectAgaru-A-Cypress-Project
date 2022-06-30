@@ -21,11 +21,13 @@ describe('Tests the Page with static content', () => {
     it('Verifies three images exist', () => {
         dynamicContentPage.pageImages().eq(2).should('exist')
     })
+
     it('Verifies the static images have the proper source', () => {
         dynamicContentPage.staticMarioImage().should('exist')
         dynamicContentPage.staticTrooperImage().should('exist')
         //The third image is not static, even on the static version of this page.
     })
+
     it('Verifies three rows exist', () => { dynamicContentPage.rowsWithText().should('exist')} )
 
     it('Verifies the text of two of the rows', () => {
@@ -40,6 +42,7 @@ describe('Tests the Page without static content', () => {
     beforeEach('', () => {
         base.visitDynamicContent()
     })
+
     it('Verifies three images exist', () => {
         dynamicContentPage.pageImages().eq(2).should('exist')
     })
