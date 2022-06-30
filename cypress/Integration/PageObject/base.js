@@ -36,6 +36,10 @@ class Base {
     visitDynamicContent(){
         cy.visit('http://localhost:7080/dynamic_content')
     }
+
+    visitDynamicContentStatically(){
+        cy.visit('http://localhost:7080/dynamic_content?with_content=static')
+    }
     visitDynamicControlsTesting(){
         cy.visit('http://localhost:7080/dynamic_controls')
     }
