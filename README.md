@@ -1,3 +1,7 @@
+---------------------------
+上がる (Agaru) To Rise, To Improve, To Make Progress
+---------------------------
+
 Instructions on how to run project:
 
 Required: Cypress, Docker
