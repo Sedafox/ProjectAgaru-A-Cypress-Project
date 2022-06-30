@@ -15,7 +15,7 @@ import DynamicContentPage from "../Integration/PageObject/dynamicContentPage"
 const base = new Base()
 const dynamicContentPage = new DynamicContentPage()
 
-
+//There are two parts to this page. A static version and a dynamic version. We will test both of these
 describe('Tests the Page with static content', () => {
     beforeEach('', () => { base.visitDynamicContentStatically() }) //Visits the static version for this test before each
     it('Verifies three images exist', () => {
