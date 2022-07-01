@@ -23,7 +23,7 @@ describe('Tests the Page with static content', () => {
     })
 
     it('Verifies the static images have the proper source', () => {
-        dynamicContentPage.staticMarioImage().should('exist')
+        dynamicContentPage.staticMarioImage().should('exist') //TODO these static images aren't actually static. Oops! Verify their existence but that is it
         dynamicContentPage.staticTrooperImage().should('exist')
         //The third image is not static, even on the static version of this page.
     })
