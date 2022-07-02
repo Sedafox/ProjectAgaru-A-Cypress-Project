@@ -15,10 +15,10 @@ describe('Tests things related to Modal Window Page', () => {
         entryAdPage.modalWindow().should('contain.text', 'encourage a user')
     })
     it('Modal Window Should be able to be closed', () => {
-        entryAdPage.modalWindowCloseButton().click()
+        base.modalWindowCloseButton().click()
     })
     it('After Closing the Modal window, re-open it with the click here button', () => {
-        entryAdPage.modalWindowCloseButton().click()
+        base.modalWindowCloseButton().click()
         entryAdPage.reOpenModalWindow().click()
     })
 })
