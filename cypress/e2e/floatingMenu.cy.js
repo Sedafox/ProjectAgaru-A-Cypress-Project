@@ -16,7 +16,7 @@ describe('Tests things related to a floating menu', () => {
 
     it('scrolls the page down, then clicks the News button', () => {
         cy.scrollTo(0,500)
-        floatingMenuPage.floatingNewsButton().click({scrollBehavior: false})
+        floatingMenuPage.floatingNewsButton().click({scrollBehavior: false}) //We want to tell Cypress not to scroll, this makes it so if the floating menu wasn't on screen,it wouldn't scroll all the way up to click it
     })
     it('scrolls the page down, then clicks the Contact button', () => {
         cy.scrollTo(0,500)
