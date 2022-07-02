@@ -11,6 +11,7 @@
   "license": "None",
   "devDependencies": {
     "@4tw/cypress-drag-drop": "^2.2.0",
-    "cypress": "^10.1.0"
+    "cypress": "^10.1.0",
+    "cypress-file-upload": "^5.0.8"
   }
 }
