@@ -18,11 +18,13 @@ describe('Tests Form Authentication', () => {
         cy.contains('Logout')
     })
     it('Logs out after logging in', () => {
-        formAuthenticationPage.enterCorrectInfo()
-        formAuthenticationPage.logOutButton().click()
+        formAuthenticationPage.enterCorrectInfo() //Enter correct info
+        formAuthenticationPage.submitButton().click() //Click Submit
+        formAuthenticationPage.logOutButton().click() //Logout
     })
     it('Enters the incorrect username and password', () => {
-        formAuthenticationPage.enterInvalidInfo()
+        formAuthenticationPage.enterInvalidInfo()//Enter invalid info
+        formAuthenticationPage.submitButton().click() //Click Submit
         //Verify we failed to log in
         cy.contains('Your username is invalid!')
     })
