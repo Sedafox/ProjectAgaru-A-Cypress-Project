@@ -1,5 +1,5 @@
 import Base from "../Integration/PageObject/base"
-import HorizontalSliderPage from "../Integration/horizontalSliderPage";
+import HorizontalSliderPage from "../Integration/PageObject/horizontalSliderPage";
 
 const base = new Base()
 const horizontalSliderPage = new HorizontalSliderPage()
