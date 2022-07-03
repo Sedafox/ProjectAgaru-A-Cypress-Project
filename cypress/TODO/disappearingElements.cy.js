@@ -1,5 +1,5 @@
-import Base from "../../Integration/PageObject/base"
-import DisappearingElementsPage from "../../Integration/PageObject/disappearingElementsPage";
+import Base from "../Integration/PageObject/base"
+import DisappearingElementsPage from "../Integration/PageObject/disappearingElementsPage";
 const base = new Base()
 const disappearingElementsPage = new DisappearingElementsPage()
 
