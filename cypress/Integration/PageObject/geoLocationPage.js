@@ -5,7 +5,7 @@ class GeoLocationPage {
     longitudeText() { return cy.get('#long-value') }
 
     //Documentation at https://github.com/cypress-io/cypress/issues/2671#issuecomment-444069577
-    fakeLocation(latitude, longitude) {
+    fakeLocation(latitude = (Math.random() * 190) - 100, longitude = (Math.random() * 280) - 100) { //We do (Math.random() * 190) - 100 because the min latitude is -90 and the maximum is 90. Same logic goes to longitude.
         return {
             onBeforeLoad(win) {
                 cy.stub(win.navigator.geolocation, "getCurrentPosition", (cb, err) => {
