@@ -2,6 +2,8 @@ class Base {
     goHome() {
         cy.visit('http://localhost:7080')
     }
+    modalWindowCloseButton() { return cy.get('.modal-footer > p')}
+
     visitABTesting() {
         cy.visit('http://localhost:7080/abtest')
     }
@@ -36,6 +38,10 @@ class Base {
     visitDynamicContent(){
         cy.visit('http://localhost:7080/dynamic_content')
     }
+
+    visitDynamicContentStatically(){
+        cy.visit('http://localhost:7080/dynamic_content?with_content=static')
+    }
     visitDynamicControlsTesting(){
         cy.visit('http://localhost:7080/dynamic_controls')
     }
@@ -65,6 +71,10 @@ class Base {
     }
     visitFramesTesting(){
         cy.visit('http://localhost:7080/frames')
+    }
+
+    visitNestedFramesTesting(){
+        cy.visit('http://localhost:7080/nested_frames')
     }
     visitGeolocationTesting(){
         cy.visit('http://localhost:7080/geolocation')
