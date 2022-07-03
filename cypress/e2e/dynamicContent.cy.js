@@ -37,7 +37,7 @@ describe('Tests the Page with static content', () => {
 })
 
 describe('Tests the Page without static content', () => {
-    beforeEach('', () => {
+    beforeEach('Refreshes Page', () => {
         base.visitDynamicContent()
     })
 
