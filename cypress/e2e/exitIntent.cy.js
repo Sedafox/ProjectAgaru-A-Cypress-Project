@@ -4,7 +4,7 @@ import ExitIntentPage from "../Integration/PageObject/exitIntentPage";
 const base = new Base()
 const exitIntentPage = new ExitIntentPage()
 
-describe('', () => {
+describe('This test is designed to test moving a mouse outside of a boundary', () => {
     beforeEach('Refreshes the page', () => {
         base.visitExitIntentTesting()
         })
