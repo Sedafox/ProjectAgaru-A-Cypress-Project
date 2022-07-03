@@ -11,7 +11,7 @@ describe('Tests GeoLocationPage', () => {
         Cypress.isBrowser('Electron') ? base.visitGeolocationTestingElectron(geoLocationPage.fakeLocation('48', '2')) : base.visitGeolocationTesting()
     })
     it('Should say "Click the button to get your current latitudeText and longitudeText"', () => {
-        geoLocationPage.findPageText()
+        geoLocationPage.findPageText().should('be.visible')
     })
     it('Should show current Latitude and Longitude after clicking the button', () => {
             geoLocationPage.findMyLocationBttn().click()
