@@ -1,5 +1,5 @@
 class FileDownloadPage {
-    someFileTxt() { return cy.get('.example > a') }
+    someFileTxt() { return cy.get('[href="download/some-file.txt"]') }
     downloadFile(cssSelector){
         /*
         Workaround for Cypress expecting a page to load after download
