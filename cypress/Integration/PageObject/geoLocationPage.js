@@ -4,6 +4,7 @@ class GeoLocationPage {
     latitudeText() { return cy.get('#lat-value') }
     longitudeText() { return cy.get('#long-value') }
 
+    //Documentation at https://github.com/cypress-io/cypress/issues/2671#issuecomment-444069577
     fakeLocation(latitude, longitude) {
         return {
             onBeforeLoad(win) {
