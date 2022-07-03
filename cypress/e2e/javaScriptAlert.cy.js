@@ -17,14 +17,14 @@ describe('Tests Javascript alerts', () => {
     it('Clicks the Button that says "Click for JS Confirm" ensures the prompt says "I am a JS Confirm", and selects confirm', () => {
         javaScriptAlertPage.clickForJSConfirmBttn().click()
         cy.on('window:alert', (str) =>{ expect(str).to.equal('I am a JS Confirm') }) //Get the alert, compare it to string
-        cy.on('window:confirm', () => true )
+        cy.on('window:confirm', () => true ) //confirm = true
         javaScriptAlertPage.afterResult().should('have.text', 'You clicked: Ok')
     })
 
     it('Clicks the Button that says "Click for JS Confirm" and selects cancel', () => {
         javaScriptAlertPage.clickForJSConfirmBttn().click()
         cy.on('window:alert', (str) =>{ expect(str).to.equal('I am a JS Confirm') }) //Get the alert, compare it to string
-        cy.on('window:confirm', () => false )
+        cy.on('window:confirm', () => false ) //cancel = false
         javaScriptAlertPage.afterResult().should('have.text', 'You clicked: Cancel')
     })
 
