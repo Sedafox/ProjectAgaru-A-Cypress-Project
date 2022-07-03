@@ -72,6 +72,10 @@ class Base {
     visitFramesTesting(){
         cy.visit('http://localhost:7080/frames')
     }
+
+    visitNestedFramesTesting(){
+        cy.visit('http://localhost:7080/nested_frames')
+    }
     visitGeolocationTesting(){
         cy.visit('http://localhost:7080/geolocation')
     }
