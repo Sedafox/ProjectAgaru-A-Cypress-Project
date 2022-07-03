@@ -1,5 +1,5 @@
-import Base from "../../Integration/PageObject/base"
-import FramesPage from "../../Integration/PageObject/framesPage";
+import Base from "../Integration/PageObject/base"
+import FramesPage from "../Integration/PageObject/framesPage";
 
 const base = new Base()
 const framesPage = new FramesPage()
