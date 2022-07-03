@@ -1,5 +1,5 @@
 import Base from "../Integration/PageObject/base"
-import JavaScriptAlertPage from "../Integration/javaScriptAlertPage";
+import JavaScriptAlertPage from "../Integration/PageObject/javaScriptAlertPage";
 
 const base = new Base()
 const javaScriptAlertPage = new JavaScriptAlertPage()
