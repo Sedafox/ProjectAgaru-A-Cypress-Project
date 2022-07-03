@@ -2,7 +2,7 @@ class FormAuthenticationPage {
     userNameField() { return cy.get('#username') }
     passwordField() { return cy.get('#password') }
     submitButton() { return cy.get('.radius')}
-    logOutButton() { return cy.get('.button.secondary.radius')}
+    logOutButton() { return cy.get('.button')}
 
     enterCorrectInfo() { //Log in successfully
         this.userNameField().type('tomsmith')
