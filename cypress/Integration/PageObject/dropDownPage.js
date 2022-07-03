@@ -1,4 +1,4 @@
 class DropDownPage{
-    dropDownMenu(){ return cy.get('div > select[id="dropdown"]') }
+    dropDownMenu(){ return cy.get('#dropdown') }
 }
 export default DropDownPage
