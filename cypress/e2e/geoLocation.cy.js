@@ -15,7 +15,7 @@ describe('Tests GeoLocationPage', () => {
     })
     it('Should show current Latitude and Longitude after clicking the button', () => {
             geoLocationPage.findMyLocationBttn().click()
-            cy.wait(6000) //it takes a few seconds to get the lat and long, so we are gonna rest here
+            if(!Cypress.isBrowser('Electron')){ cy.wait(6000) /*If the browser isn't electron, we need to wait or else the page will time out. */ }
             geoLocationPage.latitudeText().should('be.visible')
             geoLocationPage.longitudeText().should('be.visible')
     })
