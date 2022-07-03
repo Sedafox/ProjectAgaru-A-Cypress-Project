@@ -8,12 +8,13 @@ describe('Uploads an file', () => {
     beforeEach('refreshes page', () => {
         base.visitFileUploadTesting()
     })
+
     it('Chooses a file and uploads it', () => {
         //File upload capabilities are imported from
         //https://www.npmjs.com/package/cypress-file-upload
 
         cy.get('#file-upload') //Choose file button
-            .attachFile('example.json')
+            .attachFile('example.json') //The file has to be in "cypress/fixtures"
 
         cy.get('#file-submit') //Submit button
             .click()
