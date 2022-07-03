@@ -79,6 +79,9 @@ class Base {
     visitGeolocationTesting(){
         cy.visit('http://localhost:7080/geolocation')
     }
+    visitGeolocationTestingElectron(fakelocation){
+        cy.visit('http://localhost:7080/geolocation', fakelocation)
+    }
     visitHorizontalSliderTesting(){
         cy.visit('http://localhost:7080/horizontal_slider')
     }
