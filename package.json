@@ -13,5 +13,8 @@
     "@4tw/cypress-drag-drop": "^2.2.0",
     "cypress": "^10.1.0",
     "cypress-file-upload": "^5.0.8"
+  },
+  "dependencies": {
+    "cypress-real-events": "^1.7.1"
   }
 }
