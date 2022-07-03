@@ -13,7 +13,7 @@ describe('Tests GeoLocationPage', () => {
         geoLocationPage.findPageText()
     })
     it('Should show current Latitude and Longitude after clicking the button', () => {
-        geoLocationPage.whereButton().click()
+        geoLocationPage.findMyLocationBttn().click()
         cy.wait(5000) //it takes a few seconds to get the lat and long, so we are gonna rest here
         geoLocationPage.latitude().should('be.visible')
         geoLocationPage.longitude().should('be.visible')
