@@ -1,5 +1,5 @@
 import Base from "../Integration/PageObject/base"
-import LargeAndDeepDOMPage from "../TODO/largeAndDeepDOMPage";
+import LargeAndDeepDOMPage from "../Integration/PageObject/largeAndDeepDOMPage";
 
 const base = new Base()
 const largeAndDeepDOMPage = new LargeAndDeepDOMPage()
