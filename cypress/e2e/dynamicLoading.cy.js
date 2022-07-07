@@ -13,8 +13,6 @@ describe('Tests Example 1: Element on page that is hidden', () => {
         dynamicLoadingPage.exampleHelloWorld().should('be.visible')
         dynamicLoadingPage.exampleHelloWorld().should('have.text', 'Hello World!')
     })
-
-
 })
 
 describe('Tests Example 2: Element Rendered after the fact', { defaultCommandTimeout: 6000}, () => {
