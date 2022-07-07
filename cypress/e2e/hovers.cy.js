@@ -31,9 +31,10 @@ if(Cypress.isBrowser('Chrome')) {
 }
 
 if(!Cypress.isBrowser('Chrome')){
-    /*TODO find a way to run this test on non chrome-based browsers.
+    /*https://github.com/cypress-io/cypress/issues/10
     Unfortunately, cy.get(firstImage).trigger('mouseover') isn't making the text appear. Cypress accurately simulates the mouseover, but something funky is going on.
     Also tried cy.get(firstImage).invoke('show') and that doesn't work either
+    cypress' github claims its a problem with CSS elements
     Thankfully through https://github.com/dmtrKovalenko/cypress-real-events we can use Chrome Dev tools to simulate a realHover
     But this won't work on other browsers. Curses!
      */
