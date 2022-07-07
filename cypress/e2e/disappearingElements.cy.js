@@ -4,7 +4,7 @@ const base = new Base()
 const disappearingElementsPage = new DisappearingElementsPage()
 
 describe('This page is designed to test disappearing elements', () => {
-    beforeEach('', () => { base.visitDisappearingElmntsTesting()} )
+    before('', () => { base.visitDisappearingElmntsTesting()} )
     it('Home Button should exist', () => { disappearingElementsPage.homeButton().should('be.visible') })
     it('About Button Should Exist', () => { disappearingElementsPage.aboutButton().should('be.visible') })
     it('Contact Button Should Exist', () => { disappearingElementsPage.contactButton().should('be.visible') })
