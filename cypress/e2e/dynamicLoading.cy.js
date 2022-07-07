@@ -19,6 +19,7 @@ describe('Tests Example 1: Element on page that is hidden', () => {
 
 describe('Tests Example 2: Element Rendered after the fact', { defaultCommandTimeout: 6000}, () => {
     beforeEach('Refresh page', () => { base.visitDynamicLoadingTesting() })
+
     it('Should click Example 2, should click start, and wait for the element to start ', () => {
         dynamicLoadingPage.exampleTwo().click()
         dynamicLoadingPage.exampleStart().click()
