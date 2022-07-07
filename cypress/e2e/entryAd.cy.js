@@ -8,17 +8,21 @@ describe('Tests things related to Modal Window Page', () => {
     beforeEach('Refresh the page', () => {
         base.visitEntryAdTesting()
     })
-    it('Modal Window Should exist', () => {
+    it('Modal Window Should exist and be visible', () => {
         entryAdPage.modalWindow().should('exist')
+        entryAdPage.modalWindow().should('be.visible')
     })
     it('Modal Window Should contain text "encourage a user"', () => {
         entryAdPage.modalWindow().should('contain.text', 'encourage a user')
     })
     it('Modal Window Should be able to be closed', () => {
         base.modalWindowCloseButton().click()
+        base.modalWindowCloseButton().should('not.be.visible') //If the window close button isn't visible, then we successfully closed the modal window
     })
     it('After Closing the Modal window, re-open it with the click here button', () => {
         base.modalWindowCloseButton().click()
+        cy.wait(1000) //Without this wait, the window won't actually appear here.
         entryAdPage.reOpenModalWindow().click()
+        base.modalWindowCloseButton().should('be.visible')
     })
 })
