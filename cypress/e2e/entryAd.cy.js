@@ -19,9 +19,9 @@ describe('Tests things related to Modal Window Page', () => {
         base.modalWindowCloseButton().click()
         base.modalWindowCloseButton().should('not.be.visible') //If the window close button isn't visible, then we successfully closed the modal window
     })
-    it('After Closing the Modal window, re-open it with the click here button', () => {
-        base.modalWindowCloseButton().click()
+    it('After Closing the Modal window, re-open it with the click here button', () => { //Note this test sometimes fails. If this were a real project, I'd write a bug!
         cy.wait(1000) //Without this wait, the window won't actually appear here.
+        base.modalWindowCloseButton().click()
         entryAdPage.reOpenModalWindow().click()
         base.modalWindowCloseButton().should('be.visible')
     })
