@@ -1,12 +1,10 @@
-import Base from "../Integration/PageObject/base"
 import ChallengingDOMPage from "../Integration/PageObject/challengingDOMPage";
 
-const base = new Base()
 const challengingDOMPage = new ChallengingDOMPage()
 
 describe('This page is designed to test the abilities of finding best locators.', () => {
     beforeEach('Refreshes Page', () =>{
-        base.visitChallengingDOMTesting()
+        challengingDOMPage.visitChallengingDOMTesting()
     })
 
     it('Finds the three left-hand buttons', () => {

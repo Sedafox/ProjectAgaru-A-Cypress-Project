@@ -1,12 +1,10 @@
-import Base from "../Integration/PageObject/base"
 import FileDownloadPage from "../Integration/PageObject/fileDownloadPage";
 
-const base = new Base()
 const fileDownloadPage = new FileDownloadPage()
 
 describe('Downloads a file', () =>{
     beforeEach('Refresh Page', () => {
-        base.visitFileDownloadTesting()
+        fileDownloadPage.visitFileDownloadTesting()
     })
     it('Should show the text: some-file.txt', () =>{
         fileDownloadPage.someFileTxt().should('contain.text', 'some-file.txt')

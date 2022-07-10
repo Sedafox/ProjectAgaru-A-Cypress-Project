@@ -1,12 +1,10 @@
-import Base from "../Integration/PageObject/base"
 import HorizontalSliderPage from "../Integration/PageObject/horizontalSliderPage";
 
-const base = new Base()
 const horizontalSliderPage = new HorizontalSliderPage()
 
 describe('Tests Horizontal Sliders', () => {
     beforeEach(function(){
-        base.visitHorizontalSliderTesting()
+        horizontalSliderPage.visitHorizontalSliderTesting()
     })
 
     it('Ensures the instructions are written', () => {

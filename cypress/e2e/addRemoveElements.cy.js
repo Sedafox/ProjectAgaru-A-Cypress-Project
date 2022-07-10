@@ -1,12 +1,11 @@
 import AddRmElementsPage from "../Integration/PageObject/addRemoveElementsPage";
-import Base from "../Integration/PageObject/base";
 
 const addRemoveElementPage = new AddRmElementsPage()
-const base = new Base()
+
 
 describe('Tests the Add and Remove Elements Page', () => {
     beforeEach('Visit the Elements Page', () => {
-        base.visitAddRemoveTesting()
+        addRemoveElementPage.visitAddRemoveTesting()
     })
     it('Should only have An Add Element Button on first visit', () => {
         addRemoveElementPage.addElementButton().eq(0).should('be.visible');

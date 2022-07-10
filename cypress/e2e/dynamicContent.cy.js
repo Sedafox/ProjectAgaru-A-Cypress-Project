@@ -10,14 +10,12 @@ you could also grab the values of what is in those elements and check it against
 (that row 1 column 1 src is different between the refresh)
 Same with text. Just know that it becomes really hard to check things in a textbox and flakey behavior starts to crop up
  */
-import Base from "../Integration/PageObject/base.js"
 import DynamicContentPage from "../Integration/PageObject/dynamicContentPage"
-const base = new Base()
 const dynamicContentPage = new DynamicContentPage()
 
 //There are two parts to this page. A static version and a dynamic version. We will test both of these
 describe('Tests the Page with static content', () => {
-    beforeEach('', () => { base.visitDynamicContentStatically() }) //Visits the static version for this test before each
+    beforeEach('', () => { dynamicContentPage.visitDynamicContentStatically() }) //Visits the static version for this test before each
     it('Verifies three images exist', () => {
         dynamicContentPage.pageImages().eq(2).should('exist')
     })
@@ -38,7 +36,7 @@ describe('Tests the Page with static content', () => {
 
 describe('Tests the Page without static content', () => {
     beforeEach('Refreshes Page', () => {
-        base.visitDynamicContent()
+        dynamicContentPage.visitDynamicContent()
     })
 
     it('Verifies three images exist', () => {

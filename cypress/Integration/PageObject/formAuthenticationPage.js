@@ -1,4 +1,6 @@
-class FormAuthenticationPage {
+import base from "./base";
+
+class FormAuthenticationPage extends base {
     userNameField() { return cy.get('#username') }
     passwordField() { return cy.get('#password') }
     submitButton() { return cy.get('.radius')}

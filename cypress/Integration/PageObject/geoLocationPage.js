@@ -1,4 +1,6 @@
-class GeoLocationPage {
+import base from "./base";
+
+class GeoLocationPage extends base{
     findPageText() { return cy.contains('Click the button') }
     findMyLocationBttn() { return cy.get('button') }
     latitudeText() { return cy.get('#lat-value') }

@@ -1,4 +1,6 @@
-class ChallengingDOMPage{
+import base from "./base";
+
+class ChallengingDOMPage extends base{
     buttonsDiv(){ return cy.get('.large-2.columns') }
     table(){ return cy.get('table') }
     canvas(){ return cy.get('#canvas') }

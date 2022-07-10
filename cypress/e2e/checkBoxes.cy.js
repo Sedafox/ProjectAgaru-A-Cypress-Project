@@ -1,10 +1,9 @@
-import Base from "../Integration/PageObject/base"
 import CheckBoxesPage from "../Integration/PageObject/checkBoxesPage";
-const base = new Base()
+
 const checkBoxesPage = new CheckBoxesPage()
 
 describe('Testing Checkboxes', () => {
-    beforeEach('Refreshes Page', () => { base.visitCheckboxesTesting() } )
+    beforeEach('Refreshes Page', () => { checkBoxesPage.visitCheckboxesTesting() } )
     it('Ensures Checkbox 2 is checked by default, while checkbox 1 is not', () => {
         checkBoxesPage.checkBoxOne().should('not.be.checked')
         checkBoxesPage.checkBoxTwo().should('be.checked')

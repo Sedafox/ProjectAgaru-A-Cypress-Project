@@ -1,13 +1,11 @@
-import noABTestingPage from "../Integration/PageObject/noABTestingPage";
-import Base from "../Integration/PageObject/base"
+import NoABTestingPage from "../Integration/PageObject/noABTestingPage";
 
-const noABTestingPage = noABTestingPage()
-const base = new Base()
+const noABTestingPage = new NoABTestingPage()
 
 //I think this page might be a little broken. I see the flashing images in the div, but nothing is actually happening. Can't trigger anything. Hmmm...
 describe('ABTestingPage', () =>{
     it('Goes to the ABTestingPage', () =>{
-        base.visitABTesting()
+        noABTestingPage.visitABTesting()
     })
 })
 

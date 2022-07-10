@@ -1,4 +1,6 @@
-class noABTestingPage{
+import base from "./base";
+
+class NoABTestingPage extends base{
 
 }
-export default noABTestingPage
+export default NoABTestingPage

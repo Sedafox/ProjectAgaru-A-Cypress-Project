@@ -1,13 +1,11 @@
-import Base from "../Integration/PageObject/base"
 import FormAuthenticationPage from "../Integration/PageObject/formAuthenticationPage";
 
-const base = new Base()
 const formAuthenticationPage = new FormAuthenticationPage()
 
 describe('Tests Form Authentication', () => {
 
     beforeEach('Refresh the page', () => {
-        base.visitFormAuthenticationTesting()
+        formAuthenticationPage.visitFormAuthenticationTesting()
     })
 
     it('Logs in Successfully', () => {

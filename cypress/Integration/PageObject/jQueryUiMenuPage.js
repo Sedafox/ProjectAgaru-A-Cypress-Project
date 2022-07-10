@@ -1,4 +1,6 @@
-class JQueryUiMenuPage {
+import base from "./base";
+
+class JQueryUiMenuPage extends base{
     disabledMenu() { return cy.get('#ui-id-1') }
     enabledMenu() { return cy.get('#ui-id-2') }
     returnToMenu() { return cy.get('#ui-id-5') }

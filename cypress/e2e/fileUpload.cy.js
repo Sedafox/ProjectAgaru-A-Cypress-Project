@@ -1,12 +1,10 @@
-import Base from "../Integration/PageObject/base"
 import FileUploadPage from "../Integration/PageObject/fileUploadPage";
 
-const base = new Base()
 const fileUploadPage = new FileUploadPage()
 
 describe('Uploads an file', () => {
     beforeEach('refreshes page', () => {
-        base.visitFileUploadTesting()
+        fileUploadPage.visitFileUploadTesting()
     })
 
     it('Chooses a file and uploads it', () => {

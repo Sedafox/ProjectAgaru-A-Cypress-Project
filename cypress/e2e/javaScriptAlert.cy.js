@@ -1,12 +1,10 @@
-import Base from "../Integration/PageObject/base"
 import JavaScriptAlertPage from "../Integration/PageObject/javaScriptAlertPage";
 
-const base = new Base()
 const javaScriptAlertPage = new JavaScriptAlertPage()
 
 describe('Tests Javascript alerts', () => {
     beforeEach('Refresh page', () => {
-        base.visitJavascriptAlertsTesting()
+        javaScriptAlertPage.visitJavascriptAlertsTesting()
     })
 
     it('Clicks the Button that says "Click for JS Alert" ensures the prompt says "I am a JS Alert", and exits the prompt', () => {

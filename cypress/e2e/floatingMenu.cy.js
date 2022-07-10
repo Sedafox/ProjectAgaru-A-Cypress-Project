@@ -1,12 +1,10 @@
-import Base from "../Integration/PageObject/base"
 import FloatingMenuPage from "../Integration/PageObject/floatingMenuPage";
 
-const base = new Base()
 const floatingMenuPage = new FloatingMenuPage()
 
 describe('Tests things related to a floating menu', () => {
     beforeEach('Refresh the page', () => {
-        base.visitFloatingMenuTesting()
+        floatingMenuPage.visitFloatingMenuTesting()
     })
 
     it('scrolls the page down, then clicks the home button', () => {

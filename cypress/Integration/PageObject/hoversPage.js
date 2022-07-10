@@ -1,4 +1,6 @@
-class HoversPage{
+import base from "./base";
+
+class HoversPage extends base{
     firstImage() { return cy.get(':nth-child(3) > img') }
     hiddenUserName(username) { return cy.contains(`${username}`) } //Pass in a username when calling this function
     viewProfile(userNumber) { return cy.get(`a[href="/users/${userNumber}"]`) } //Pass in the usernumber (1-3) when calling this function

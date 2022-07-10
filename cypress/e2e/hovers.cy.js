@@ -1,13 +1,11 @@
-import Base from "../Integration/PageObject/base"
 import HoversPage from "../Integration/PageObject/hoversPage";
 
-const base = new Base()
 const hoversPage = new HoversPage()
 
 if(Cypress.isBrowser('Chrome')) {
     describe('Tests hover functionality', () => {
         beforeEach('Refresh Page', () => {
-            base.visitHoverTesting()
+            hoversPage.visitHoverTesting()
         })
         it('Tests Hovering over the first photo, should display username and View Profile Button', () => {
             hoversPage.firstImage().realHover()

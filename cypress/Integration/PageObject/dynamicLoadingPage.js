@@ -1,4 +1,6 @@
-class DynamicLoadingPage{
+import base from "./base";
+
+class DynamicLoadingPage extends base{
     exampleOne() { return cy.get('[href="/dynamic_loading/1"]') }
     exampleTwo() { return cy.get('[href="/dynamic_loading/2"]') }
 

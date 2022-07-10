@@ -1,4 +1,6 @@
-class FileDownloadPage {
+import base from "./base";
+
+class FileDownloadPage extends base{
     someFileTxt() { return cy.get('[href="download/some-file.txt"]') }
     downloadFile(cssSelector){
         /*

@@ -1,4 +1,6 @@
-class FloatingMenuPage{
+import base from "./base";
+
+class FloatingMenuPage extends base{
     floatingHomeButton() { return cy.get('a[href="#home"]')}
     floatingNewsButton() { return cy.get('a[href="#news"]')}
     floatingContactButton() { return cy.get('a[href="#contact"]')}

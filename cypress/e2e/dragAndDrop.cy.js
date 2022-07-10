@@ -1,5 +1,5 @@
 import Base from "../Integration/PageObject/base"
-import DragAndDropPage from "../Integration/PageObject/dragAndDropPage";
+
 const base = new Base()
 
 describe('Drags and Drops things', () => {

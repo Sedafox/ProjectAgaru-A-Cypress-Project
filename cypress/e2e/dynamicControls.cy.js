@@ -1,11 +1,9 @@
-import Base from "../Integration/PageObject/base"
 import DynamicControlsPage from "../Integration/PageObject/dynamicControlsPage"
 
-const base = new Base()
 const dynamicControlsPage = new DynamicControlsPage()
 
 describe('Dynamic Controls Page', () => {
-    beforeEach('Refresh the page', () => { base.visitDynamicControlsTesting() })
+    beforeEach('Refresh the page', () => { dynamicControlsPage.visitDynamicControlsTesting() })
     it('Checks the checkbox then removes it', () => {
         dynamicControlsPage.checkBox().check()
         dynamicControlsPage.removeButton().click()

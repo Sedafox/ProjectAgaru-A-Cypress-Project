@@ -1,12 +1,10 @@
-import Base from "../Integration/PageObject/base.js"
 import ExitIntentPage from "../Integration/PageObject/exitIntentPage";
 
-const base = new Base()
 const exitIntentPage = new ExitIntentPage()
 
 describe('This test is designed to test moving a mouse outside of a boundary', () => {
     beforeEach('Refreshes the page', () => {
-        base.visitExitIntentTesting()
+        exitIntentPage.visitExitIntentTesting()
         })
     it('Should say "Mouse out of the viewport pane and see a modal window appear', () => {
         cy.contains('Mouse out of the viewport pane and see a modal window appear').should('be.visible')
@@ -20,6 +18,6 @@ describe('This test is designed to test moving a mouse outside of a boundary', (
     })
     it('Modal Window should be closable', () => {
         exitIntentPage.exitBoundary()
-        base.modalWindowCloseButton().click()
+        exitIntentPage.modalWindowCloseButton().click()
     })
 })

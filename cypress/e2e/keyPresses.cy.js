@@ -1,11 +1,9 @@
-import Base from "../Integration/PageObject/base"
 import KeyPressesPage from "../Integration/PageObject/keyPressesPage";
 
-const base = new Base()
 const keyPressesPage = new KeyPressesPage()
 
 describe('It tests entering a single key', () => {
-    beforeEach('Refreshes page', () => { base.visitKeyPressesTesting() })
+    beforeEach('Refreshes page', () => { keyPressesPage.visitKeyPressesTesting() })
 
 
     it('Enters the alphabet and checks to see if the proper text is displayed', () => {
