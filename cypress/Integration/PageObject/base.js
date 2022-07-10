@@ -1,10 +1,11 @@
 class Base {
-    goHome() {
-        cy.visit('http://localhost:7080')
-    }
 
     modalWindowCloseButton() {
         return cy.get('.modal-footer > p')
+    }
+
+    goHome() {
+        cy.visit('http://localhost:7080')
     }
 
     visitABTesting() {
