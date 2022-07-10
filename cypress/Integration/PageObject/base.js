@@ -146,7 +146,7 @@ class Base {
     visitMultipleWindowsTesting() {
         cy.visit('http://localhost:7080/windows')
     }
-    
+
 
     visitNotificationMessageTesting() {
         cy.visit('http://localhost:7080/notification_message')
