@@ -4,7 +4,7 @@ const homePage = new HomePage()
 
 describe('Goes to the Home page', () => {
     beforeEach('Refreshes the Page',() => {
-        homePage.goHome()
+        homePage.visitHome()
     })
     it('Should Verify the Page says "Welcome to the-internet"', () => {
         homePage.welcomeMessage().should('be.visible')
