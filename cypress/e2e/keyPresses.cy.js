@@ -8,10 +8,10 @@ describe('It tests entering a single key', () => {
 
     it('Enters the alphabet and checks to see if the proper text is displayed', () => {
         const alphabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
-        for(let i in alphabet){
-            keyPressesPage.inputField().type(alphabet[i])
-            keyPressesPage.textResult().should('have.text','You entered: ' + alphabet[i]) //Since this page only checks for the last letter entered, we don't have to worry about clearing the text field here
-        }
+        alphabet.forEach(alphabet => {
+            keyPressesPage.inputField().type(alphabet)
+            keyPressesPage.textResult().should('have.text','You entered: ' + alphabet) //Since this page only checks for the last letter entered, we don't have to worry about clearing the text field here
+        })
     })
 
     it('Enters Backspace', () => {
