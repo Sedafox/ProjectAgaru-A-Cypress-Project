@@ -2,147 +2,189 @@ class Base {
     goHome() {
         cy.visit('http://localhost:7080')
     }
-    modalWindowCloseButton() { return cy.get('.modal-footer > p')}
+
+    modalWindowCloseButton() {
+        return cy.get('.modal-footer > p')
+    }
 
     visitABTesting() {
         cy.visit('http://localhost:7080/abtest')
     }
+
     visitAddRemoveTesting() {
         cy.visit('http://localhost:7080/add_remove_elements/')
     }
 
-    visitBrokenImagesTesting(){
+    visitBrokenImagesTesting() {
         cy.visit('http://localhost:7080/broken_images')
     }
-    visitChallengingDOMTesting(){
+
+    visitChallengingDOMTesting() {
         cy.visit('http://localhost:7080/challenging_dom')
     }
-    visitCheckboxesTesting(){
+
+    visitCheckboxesTesting() {
         cy.visit('http://localhost:7080/checkboxes')
     }
-    visitContextMenuTesting(){
+
+    visitContextMenuTesting() {
         cy.visit('http://localhost:7080/context_menu')
     }
-    visitDigestAuthTesting(){
+
+    visitDigestAuthTesting() {
         cy.visit('https://admin:admin@the-internet.herokuapp.com/digest_auth')
     }
-    visitDisappearingElmntsTesting(){
+
+    visitDisappearingElmntsTesting() {
         cy.visit('http://localhost:7080/disappearing_elements')
     }
-    visitDragNDropTesting(){
+
+    visitDragNDropTesting() {
         cy.visit('http://localhost:7080/drag_and_drop')
     }
-    visitDropdownTesting(){
+
+    visitDropdownTesting() {
         cy.visit('http://localhost:7080/dropdown')
     }
-    visitDynamicContent(){
+
+    visitDynamicContent() {
         cy.visit('http://localhost:7080/dynamic_content')
     }
 
-    visitDynamicContentStatically(){
+    visitDynamicContentStatically() {
         cy.visit('http://localhost:7080/dynamic_content?with_content=static')
     }
-    visitDynamicControlsTesting(){
+
+    visitDynamicControlsTesting() {
         cy.visit('http://localhost:7080/dynamic_controls')
     }
-    visitDynamicLoadingTesting(){
+
+    visitDynamicLoadingTesting() {
         cy.visit('http://localhost:7080/dynamic_loading')
     }
-    visitEntryAdTesting(){
+
+    visitEntryAdTesting() {
         cy.visit('http://localhost:7080/entry_ad')
     }
-    visitExitIntentTesting(){
+
+    visitExitIntentTesting() {
         cy.visit('http://localhost:7080/exit_intent')
     }
-    visitFileDownloadTesting(){
+
+    visitFileDownloadTesting() {
         cy.visit('http://localhost:7080/download')
     }
-    visitFileUploadTesting(){
+
+    visitFileUploadTesting() {
         cy.visit('http://localhost:7080/upload')
     }
-    visitFloatingMenuTesting(){
+
+    visitFloatingMenuTesting() {
         cy.visit('http://localhost:7080/floating_menu')
     }
-    visitForgotPasswordTesting(){
+
+    visitForgotPasswordTesting() {
         cy.visit('http://localhost:7080/forgot_password')
     }
+
     visitFormAuthenticationTesting() {
         cy.visit('http://localhost:7080/login')
     }
-    visitFramesTesting(){
+
+    visitFramesTesting() {
         cy.visit('http://localhost:7080/frames')
     }
 
-    visitNestedFramesTesting(){
+    visitNestedFramesTesting() {
         cy.visit('http://localhost:7080/nested_frames')
     }
-    visitGeolocationTesting(){
+
+    visitGeolocationTesting() {
         cy.visit('http://localhost:7080/geolocation')
     }
-    visitGeolocationTestingElectron(fakelocation){
+
+    visitGeolocationTestingElectron(fakelocation) {
         cy.visit('http://localhost:7080/geolocation', fakelocation)
     }
-    visitHorizontalSliderTesting(){
+
+    visitHorizontalSliderTesting() {
         cy.visit('http://localhost:7080/horizontal_slider')
     }
-    visitHoverTesting(){
+
+    visitHoverTesting() {
         cy.visit('http://localhost:7080/hovers')
     }
-    visitInfiniteScrollTesting(){
+
+    visitInfiniteScrollTesting() {
         cy.visit('http://localhost:7080/infinite_scroll')
     }
-    visitInputsTesting(){
+
+    visitInputsTesting() {
         cy.visit('http://localhost:7080/inputs')
     }
-    visitJQueryUIMenusTesting(){
+
+    visitJQueryUIMenusTesting() {
         cy.visit('http://localhost:7080/jqueryui/menu')
     }
-    visitJavascriptAlertsTesting(){
+
+    visitJavascriptAlertsTesting() {
         cy.visit('http://localhost:7080/javascript_alerts')
     }
-    visitJavascriptonloadTesting(){
+
+    visitJavascriptonloadTesting() {
         cy.visit('http://localhost:7080/javascript_error')
     }
-    visitKeyPressesTesting(){
+
+    visitKeyPressesTesting() {
         cy.visit('http://localhost:7080/key_presses')
     }
-    visitLargeNDeepDOMTesting(){
+
+    visitLargeNDeepDOMTesting() {
         cy.visit('http://localhost:7080/large')
     }
-    visitMultipleWindowsTesting(){
+
+    visitMultipleWindowsTesting() {
         cy.visit('http://localhost:7080/windows')
     }
-    visitNestedFramesTesting(){
-        cy.visit('http://localhost:7080/nested_frames')
-    }
-    visitNotificationMessageTesting(){
+    
+
+    visitNotificationMessageTesting() {
         cy.visit('http://localhost:7080/notification_message')
     }
-    visitRedirectLinkTesting(){
+
+    visitRedirectLinkTesting() {
         cy.visit('http://localhost:7080/redirector')
     }
-    visitSecureFileDownloadTesting(){
+
+    visitSecureFileDownloadTesting() {
         cy.visit('http://localhost:7080/download_secure')
     }
-    visitShadowDomTesting(){
+
+    visitShadowDomTesting() {
         cy.visit('http://localhost:7080/shadowdom')
     }
-    visitShiftingContentTesting(){
+
+    visitShiftingContentTesting() {
         cy.visit('http://localhost:7080/shifting_content')
     }
-    visitSlowResourcesTesting(){
+
+    visitSlowResourcesTesting() {
         cy.visit('http://localhost:7080/slow')
     }
-    visitSortableDataTablesTesting(){
+
+    visitSortableDataTablesTesting() {
         cy.visit('http://localhost:7080/tables')
     }
-    visitStatusCodesTesting(){
+
+    visitStatusCodesTesting() {
         cy.visit('http://localhost:7080/status_codes')
     }
-    visitTyposTesting(){
+
+    visitTyposTesting() {
         cy.visit('http://localhost:7080/typos')
     }
-    visitWYSIWYGEditorTesting(){
+
+    visitWYSIWYGEditorTesting() {
         cy.visit('http://localhost:7080/tinymce')
     }
 }
