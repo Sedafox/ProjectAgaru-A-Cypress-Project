@@ -4,7 +4,7 @@ class Base {
         return cy.get('.modal-footer > p')
     }
 
-    goHome() {
+    visitHome() {
         cy.visit('http://localhost:7080')
     }
 
