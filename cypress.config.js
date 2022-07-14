@@ -8,5 +8,6 @@ module.exports = defineConfig({
   },
   "video": false,
   viewportHeight: 900,
-  viewportWidth: 1600
+  viewportWidth: 1600,
+  chromeWebSecurity: false
 });

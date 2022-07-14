@@ -11,7 +11,7 @@ describe('Tests Nested frames functionality', () => {
     })
 
     it('Identifies all nested frames', () => {
-        framesPage.topLeftFrame()
+        framesPage.topLeftFrame().get('body').should('have.text', 'LEFT')
        // framesPage.topMiddleFrame().should('exist')
        // framesPage.topRightFrame().should('exist')
     })
