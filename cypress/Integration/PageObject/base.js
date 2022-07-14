@@ -1,9 +1,5 @@
 class Base {
 
-    modalWindowCloseButton() {
-        return cy.get('.modal-footer > p')
-    }
-
     visitHome() {
         cy.visit('http://localhost:7080')
     }
