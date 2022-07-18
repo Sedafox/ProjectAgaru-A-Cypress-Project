@@ -19,5 +19,6 @@ describe('This test is designed to test moving a mouse outside of a boundary', (
     it('Modal Window should be closable', () => {
         exitIntentPage.exitBoundary()
         exitIntentPage.modalWindowCloseButton().click()
+        exitIntentPage.modalWindowCloseButton().should('not.be.visible') //If the modal Window's close button isn't visible, the window is closed
     })
 })
