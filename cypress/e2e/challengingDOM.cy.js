@@ -26,6 +26,6 @@ describe('This page is designed to test the abilities of finding best locators.'
         challengingDOMPage.deleteButton().eq(5).click()
     })
     it('Checks for a canvas Element', () => {
-        challengingDOMPage.canvas()
+        challengingDOMPage.canvas().should('be.visible')
     })
 })
