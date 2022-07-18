@@ -10,6 +10,6 @@ describe('Downloads a file', () =>{
         fileDownloadPage.someFileTxt().should('contain.text', 'some-file.txt')
     })
     it('Should download the file after clicking some-file.txt ', () => {
-        fileDownloadPage.downloadFile('[href="download/some-file.txt"]')
+        fileDownloadPage.downloadFile('[href="download/some-file.txt"]') //assertion is made during downloadFile()
     })
 })
